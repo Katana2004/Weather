@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="weather-icon.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-icons">
+            <img src="icons/icons8-молния-из-облаков-50.png" class="weather-icon" alt="Cloudy">
+            <img src="icons/icons8-сильный-дождь-50.png" class="weather-icon" alt="Few Clouds">
+            <img src="icons/icons8-снег-50.png" class="weather-icon" alt="Scattered Clouds">
+            <img src="icons/icons8-частичная-облачность-50.png" class="weather-icon" alt="Broken Clouds">
+            <img src="icons/icons8-солнце-50.png" class="weather-icon" alt="Shower Rain">
+            <img src="icons/icons8-ветер-50.png" class="weather-icon" alt="Thunderstorm">
+        </div>
+
+        <input type="text" id="city" placeholder="Enter city">
+        <input type="text" id="country" placeholder="Enter country">
+
+        <button class="weather-button" onclick="fetchWeather()">Get Weather</button> 
+        <button class="weather-button" onclick="getLocation()">Get Weather by Location</button>
+
+        <div id="weather"></div>
+    </div>
+
+    <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
